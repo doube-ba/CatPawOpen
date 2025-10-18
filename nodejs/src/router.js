@@ -1,16 +1,18 @@
-import duoduo from "./spider/video/duoduo.js";
-import baseset from "./spider/video/baseset.js";
-import mogg from "./spider/video/mogg.js";
-import leijing from "./spider/video/leijing.js";
-import panta from "./spider/video/panta.js";
-import wogg from "./spider/video/wogg.js";
-import zhizhen from "./spider/video/zhizhen.js";
-import tgsou from "./spider/video/tgsou.js";
-import tgchannel from "./spider/video/tgchannel.js";
-import douban from "./spider/video/douban.js";
-import push from "./spider/video/push.js";
+// import duoduo from "./spider/video/duoduo.js";
+// import baseset from "./spider/video/baseset.js";
+// import mogg from "./spider/video/mogg.js";
+// import leijing from "./spider/video/leijing.js";
+// import panta from "./spider/video/panta.js";
+// import wogg from "./spider/video/wogg.js";
+// import zhizhen from "./spider/video/zhizhen.js";
+// import tgsou from "./spider/video/tgsou.js";
+// import tgchannel from "./spider/video/tgchannel.js";
+// import douban from "./spider/video/douban.js";
+// import push from "./spider/video/push.js";
+import guan_fang_cai_ji from "./spider/video/guanfangcaiji.js";
 import {getCache} from "./website/sites.js";
 
+// const spiders = [guan_fang_cai_ji];
 const spiders = [douban, duoduo, mogg, leijing, panta, wogg, zhizhen, tgchannel, tgsou, baseset, push];
 const spiderPrefix = '/spider';
 
