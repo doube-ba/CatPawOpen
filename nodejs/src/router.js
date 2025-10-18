@@ -12,8 +12,8 @@
 import guan_fang_cai_ji from "./spider/video/guanfangcaiji.js";
 import {getCache} from "./website/sites.js";
 
-// const spiders = [guan_fang_cai_ji];
-const spiders = [douban, duoduo, mogg, leijing, panta, wogg, zhizhen, tgchannel, tgsou, baseset, push];
+const spiders = [guan_fang_cai_ji];
+// const spiders = [douban, duoduo, mogg, leijing, panta, wogg, zhizhen, tgchannel, tgsou, baseset, push];
 const spiderPrefix = '/spider';
 
 /**
