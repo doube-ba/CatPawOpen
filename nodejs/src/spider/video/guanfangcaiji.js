@@ -196,12 +196,10 @@ async function play(_inReq, _outResp) {
         }
     }
     if (flag !== 'dyttm3u8') {
-        return_data.url =  await jx_1(id);
-        // http://127.0.0.1:9978?do=js&jx=1
-        // return_data.url = [
-        //     '线路1', `proxy://do=js&jx=1&uri=${id}`, '线路2', `proxy://do=js&jx=2&uri=${id}`,
-        // ]
-
+        const info = await jx_1(id);
+        if (info[0]){
+            return_data.url =  info[1];
+        }
     }
     if (flag === 'dyttm3u8') {
         return_data.url = id;
@@ -249,3 +247,4 @@ export default {
         fastify.post('/search', search);
     },
 };
+
